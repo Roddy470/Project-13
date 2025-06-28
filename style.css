@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+/* General */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  line-height: 1.3;
+}
+
+h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  font-weight: 500;
+  color: hsl(201, 11%, 66%);
+  line-height: 1.7;
+}
+
+
+
+/* Styling the Header */
+
+#logo {
+  padding: 120px 0 50px;
+  position: relative;
+}
+
+#logo::before {
+  content: url(bg-header-mobile.png);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#logo img {
+  width: 120px;
+}
+
+/* Styling the Intro */
+
+#intro {
+  padding: 20px 24px 120px;
+}
+
+#intro h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+#intro p {
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
+
+.buttons button {
+  width: 100%;
+  height: 55px;
+  color: hsl(0,0%,100%);
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 26px;
+  margin-bottom: 24px;
+}
+
+
+
+.buttons .ios {
+  background-color: hsl(171,66%,44%);
+  border-bottom-color: hsl(171,66%,36%);
+}
+
+.buttons .ios:hover, .buttons .ios:active {
+  background-color: hsl(171,66%,60%);
+  border-bottom-color: hsl(171,66%,50%);
+}
+
+.buttons .mac {
+  background-color: hsl(233,100%,69%);
+  border-bottom-color: hsl(233,100%,61%);
+}
+
+.buttons .mac:hover, .buttons .mac:active {
+  background-color: hsl(233,100%,80%);
+  border-bottom-color: hsl(233,100%,75%);
+}
+
+
+
+/* Styling the write-ups */
+
+.write-up {
+  padding: 20px 24px;
+}
+
+.write-up h1 {
+  margin-bottom: 20px;
+}
+
+.write-up p {
+  padding-bottom: 24px;
+}
+
+
+
+/* Styling the first write-ups */
+
+#first-write-up {
+  padding: 20px 24px 120px;
+}
+
+#first-write-up img {
+  width: 100%;
+  height: auto;
+}
+
+#first-write-up .content {
+  padding-top: 44px;
+}
+
+#first-write-up .content h2 {
+  padding-bottom: 8px;
+}
+
+#first-write-up .content p {
+  padding-bottom: 8px;
+  line-height: 1.7;
+}
+
+
+
+/* Styling the second write-ups */
+
+#second-write-up {
+  padding: 20px 24px;
+}
+
+#second-write-up p {
+  padding-top: 15px;
+}
+
+#second-write-up img {
+  width: 100%;
+  margin: 44px 0;
+}
+
+
+
+/* Styling the third write-ups */
+
+#third-write-up {
+  padding: 20px 24px 80px;
+}
+
+#third-write-up p {
+  padding: 15px 0 10px;
+  margin-bottom: 80px;
+}
+
+#third-write-up .content img {
+  margin-bottom: 40px;
+}
+
+#third-write-up .content p {
+  margin-bottom: 43px;
+}
+
+
+
+/* Styling the Brand logos */
+
+.brands {
+  padding: 10px 24px;
+}
+
+.brands .brand {
+  margin-bottom: 30px;
+  padding: 10px 0 20px;
+}
+
+.brands .brand img {
+  width: 40%;
+  max-width: 600px;
+}
+
+
+
+/* Styling the Conclusion */
+
+#conclusion {
+  padding: 70px 24px 130px;
+}
+
+#conclusion h1 {
+  padding-bottom: 16px;
+}
+
+#conclusion p {
+  padding-bottom: 44px;
+}
+
+
+
+/* Styling the Footer */
+
+footer {
+  Padding: 0 24px;
+  background-color: hsl(233, 17%, 91%);
+}
+
+footer img {
+  width: 55px;
+  margin: 45px 0 30px;
+}
+
+footer .links {
+  padding-bottom: 20px;
+}
+
+footer .links p {
+  margin-bottom: 25px;
+}
+
+footer .links p a {
+  color: hsl(210, 10%, 33%);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer .links p a:hover, footer .links p a:active {
+  color: hsl(171,66%,44%);
+}
+
+footer .icons {
+  padding-bottom: 30px;
+}
+
+footer .icons a svg {
+  padding: 0 16px 10px;
+  color: #4C545C;
+}
+
+footer .icons a:hover svg, footer .icons a:active svg {
+  color: hsl(171,66%,44%);
+}
+
+
+
+
+
+/* Media Queries For Responsiveness */
+
+@media(min-width: 740px){
+  #logo::before {
+    content: url(bg-header-desktop.png);
+    width: 150%;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  #intro {
+    padding: 20px 120px 120px;
+  }
+  
+  #intro h1 {
+    font-size: 40px;
+  }
+  
+  #intro p {
+    font-size: 18px;
+  }
+  
+  .buttons button {
+    width: 40%;
+    margin: 0 3px 24px;
+  }
+  
+  .write-up {
+    padding: 20px 120px;
+  }
+
+  .write-up h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+  
+  .write-up p {
+    font-size: 18px;
+  }
+
+  #first-write-up {
+    padding: 20px 80px 120px 0;
+    display: flex;
+    gap: 40px;
+  }
+
+  #first-write-up img {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: -30px;
+  }
+  
+  #first-write-up p {
+    font-size: 18px;
+  }
+  
+
+  #first-write-up .content {
+    padding-top: 44px;
+    text-align: left;
+  }
+
+  #second-write-up {
+    padding: 20px 60px;
+  }
+  
+  #second-write-up p {
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+  }
+  
+  #third-write-up {
+    padding: 20px 40px 80px;
+  }
+
+  #third-write-up p {
+    padding: 15px 0 10px;
+    margin-bottom: 80px;
+  }
+  
+  #third-write-up .contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #third-write-up .contents .content {
+    width: 31%;
+  }
+
+  #third-write-up .content img {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+
+  #third-write-up .content p {
+    margin-bottom: 43px;
+  }
+  
+  .brands {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 80px;
+    
+  }
+  
+  .brands .brand {
+    width: 20%;
+  }
+  
+  .brands .brand img {
+    width: 100%;
+  }
+  
+  #conclusion {
+    padding: 70px 100px 130px;
+  }
+}
+
+@media(min-width: 1000px){
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    Padding: 0 40px;
+  }
+  
+  footer .info {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .info img {
+    margin-right: 60px;
+  }
+  
+  footer .info .links {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+  }
+  
+  footer .links p {
+    margin: 0;
+    padding: 0 30px 0 0;
+    width: 120px;
+    display: inline-block;
+    font-size: 18px;
+  }
+  
+  footer .icons {
+    padding-bottom: 0;
+  }
+
+  footer .icons a svg {
+    padding: 0 16px 0;
+  }
+}
+
+@media(min-width: 1200px){
+  footer .info img {
+    margin-right: 160px;
+  }
+  
+  footer .links p {
+    padding: 0 45px 0 0;    
+  }
+}
+
+@media(min-width: 1400px){
+  #intro {
+    padding: 20px 360px 120px;
+  }
+  
+  .buttons button {
+    margin: 0 6px 24px;
+  }
+  
+  .write-up {
+    padding: 20px 400px;
+  }
+
+  #first-write-up {
+    padding: 20px 250px 120px 0;
+    gap: 65px;
+  }
+
+  #second-write-up {
+    padding: 20px 300px;
+  }
+  
+  #second-write-up img {
+    max-width: 1100px;
+  }
+  
+  #third-write-up {
+    padding: 20px 200px 80px;
+  }
+  
+  #third-write-up .contents .content {
+    width: 30%;
+  }
+
+  .brands {
+    padding: 10px 160px;
+  }
+  
+  .brands .brand {
+    width: 12%;
+  }
+  
+  #conclusion {
+    padding: 70px 380px 130px;
+  }
+  
+  footer {
+    Padding: 0 160px;
+  }
+  
+  footer .info img {
+    margin-right: 120px;
+  }
+  
+  footer .links p {
+    padding: 0 45px 0 0;
+    width: 120px;
+  }
+  
+  footer .icons {
+    padding-bottom: 0;
+  }
+}
+
+
+@media(min-width: 1600px){
+  footer .info img {
+    margin-right: 150px;
+  }
+  
+  footer .links p {
+    padding: 0 60px 0 0;
+    width: 120px;
+  }
+}
+
+@media(min-width: 1800px){
+  h1 {
+    font-size: 40px;
+  }
+  
+  p {
+    font-size: 26px;
+  }
+  
+  footer .info {
+    width: 70%;
+  }
+  
+  footer .links p {
+    padding: 0 45px 0 0;
+    width: 120px;
+  }
+}
+
+@media(min-width: 2100px){
+  #intro {
+    padding: 20px 500px 120px;
+  }
+  
+  .buttons button {
+    margin: 0 10px 24px;
+  }
+  
+  .write-up {
+    padding: 20px 550px;
+  }
+
+  #first-write-up {
+    padding: 20px 400px 120px 580px;
+    gap: 120px;
+    position: static;
+  }
+  
+  #first-write-up img {
+    max-width: 600px;
+  }
+
+  #second-write-up {
+    padding: 20px 450px;
+  }
+  
+  #third-write-up {
+    padding: 20px 350px 80px;
+  }
+  
+  #third-write-up .contents .content {
+    width: 30%;
+  }
+
+  .brands {
+    padding: 10px 300px;
+  }
+  
+  .brands .brand {
+    width: 12%;
+  }
+  
+  #conclusion {
+    padding: 70px 500px 130px;
+  }
+  
+  footer {
+    Padding: 0 250px;
+  }
+}
